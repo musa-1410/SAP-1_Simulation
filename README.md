@@ -1,6 +1,6 @@
 # SAP-1 Processor - Verilog Implementation
 
-A Verilog implementation of the SAP-1 (Simple-As-Possible) computer architecture, featuring a basic 8-bit processor with an advanced instruction set with a frontend visualization.
+A Verilog implementation of the SAP-1 (Simple-As-Possible) computer architecture features a basic 8-bit processor with an advanced instruction set and a frontend visualization.
 
 ---
 
@@ -8,7 +8,6 @@ A Verilog implementation of the SAP-1 (Simple-As-Possible) computer architecture
 - Mohammad Musa Ali
 - Muhammad Umer
 - Sarosh Ishaq
-- 
 ---
 
 ## 🖥️ Project Overview
@@ -39,6 +38,7 @@ The SAP-1 is an 8-bit educational processor designed to demonstrate fundamental 
 ### Prerequisites
 - **Icarus Verilog** (iverilog) - [Install Guide](http://iverilog.icarus.com)  
 - **GTKWave** (for waveform viewing) - [Download](http://gtkwave.sourceforge.net)
+- **Ubuntu** (for backend server) - [Download](https://ubuntu.com/download/desktop)
 
 ---
 
@@ -83,8 +83,13 @@ zero_flag: Indicates ACC=0 for conditional jumps (JZ)
 x Values Persist: 
 Ensure:
 
-Reset signal (reset = 1) is applied in the first 20ns
+The reset signal (reset = 1) is applied in the first 20ns
 
-All registers have proper initialization in initial blocks
+All registers have proper initialization in the initial blocks
 
 Compilation Errors: Verify file names match module names exactly.
+
+## FRONTEND SIMULATION
+- Run Ubuntu and go to the directory where the project is saved. 
+- Write the command "node server.js" to start the backend server.
+- Open index.html and simulate the visualization and interactive display.
